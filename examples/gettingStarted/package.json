@@ -1,0 +1,12 @@
+{
+  "name": "gettingstarted",
+  "version": "1.0.0",
+  "description": "Simple examples demonstrating the use of the MathWorks Community Node.js SDK.",
+  "main": "gettingStarted.js",
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "httpdispatcher": "^2.2.0",
+    "matlabcentral": "1.0.0"
+  }
+}
