@@ -65,7 +65,7 @@ async function executeSearch() {
     let searchApi = new MATLABCentral.SearchApi();
     let opts = {
         "query": "plotting",
-        "Scope": "matlab-answers,file-exchange"
+        "scope": "matlab-answers,file-exchange"
     }
     let searchResponse = await searchApi.search(opts);
     console.log("Search API called successfully");
@@ -103,11 +103,10 @@ git clone https://github.com/mathworks/matlabcentral-node.git
 cd matlabcentral-node
 ```
 
-Next, install dependencies and build.
+Next, install dependencies.
 
 ```sh
 npm install
-npm run build
 npm test
 ```
 
@@ -132,7 +131,7 @@ We are excited to hear any feedback you have for us and welcome contributions in
 
 ## License
 
-The license is available in the License file within this repository
+The license is available in the License file within this repository.
 
 &copy; 2023 The MathWorks, Inc.
 

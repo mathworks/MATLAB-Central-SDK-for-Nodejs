@@ -8,10 +8,11 @@ async function executeSearch() {
     let opts = {
         "query": "plotting",
         "scope": "file-exchange,matlab-answers",
+        "tags": "legend",
         "createdBefore": new Date('12-Mar-2023 11:00:00'),
         "createdAfter": new Date('06-Mar-2022 11:00:00'),
         "sortOrder": "created asc",
-        "page": 2,
+        "page": 3,
         "count": 15
     }
     let searchResponse = await searchApi.search(opts);

@@ -4,8 +4,12 @@
   "description": "Use this library to manage requests to MATLAB Central aka MathWorks Community API from your Node.js applications.",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha 'test/**/*.js' --recursive --require @babel/register",
+    "test": "mocha \"test/**/*.js\" --recursive --require @babel/register",
     "bundle": "browserify main/index.js --standalone MATLABCentral -o dist/bundle.js -t babelify"
+  },
+  "author": {
+    "name": "MathWorks Community Team",
+    "email": "mlc-external-integrations@groups.mathworks.com"
   },
   "type": "module",
   "browser": {
@@ -40,5 +44,6 @@
     "expect": "^29.5.0",
     "mocha": "^10.2.0",
     "sinon": "^7.2.0"
-  }
+  },
+  "bugs": "mlc-external-integrations@groups.mathworks.com"
 }
