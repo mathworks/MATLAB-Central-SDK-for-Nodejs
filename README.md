@@ -1,7 +1,7 @@
 
 # MATLAB Central Node.js SDK
 
-The toolbox provides easy to use functions that simplify the process of making requests to the MATLAB Central (MathWorks® Community) APIs. Whether you are using the APIs for data-analysis/reporting or for building custom Node.js apps, the library provides for a smooth integration.
+The toolbox provides easy to use functions that simplify the process of making requests to the [MATLAB Central (MathWorks® Community) APIs](https://api.mathworks.com/community/docs). Whether you are using the APIs for data-analysis/reporting or for building custom Node.js apps, the library provides for a smooth integration.
 
 - [MATLAB Central Node.js SDK](#matlab-central-nodejs-sdk)
   - [Requirements](#requirements)
@@ -96,14 +96,9 @@ If the request is successful, the code prints 'Search API called successfully.' 
 
 ## Tests
 
-First, clone the repo locally and `cd` into the directory.
+First, clone this repo locally and `cd` into the cloned directory.
 
-```sh
-git clone https://github.com/mathworks/matlabcentral-node.git
-cd matlabcentral-node
-```
-
-Next, install dependencies.
+Next, install dependencies and run tests.
 
 ```sh
 npm install
