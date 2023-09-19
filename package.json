@@ -45,5 +45,10 @@
     "mocha": "^10.2.0",
     "sinon": "^7.2.0"
   },
-  "bugs": "mlc-external-integrations@groups.mathworks.com"
-}
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mathworks/MATLAB-Central-SDK-for-Nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mathworks/MATLAB-Central-SDK-for-Nodejs/issues"
+  }}
