@@ -33,29 +33,30 @@ npm install matlabcentral
 ## Quick Usage
 To create a Node.js application using the matlabcentral SDK, do the following:
 
-1. Open a new terminal window. Create a new directory for your project and then go to that directory. Alternatively, you could copy the `gettingStarted` directory inside /examples and proceed to Step 5.
+1. Open a new terminal window. Create a new directory for your project and then go to that directory. Alternatively, you could copy the `gettingStarted` directory inside /examples and proceed to Step 6.
 ```sh
 mkdir gettingStarted
 cd ./gettingStarted
 ```
 
-1. Use the npm command to create a project definition file (package.json).
+2. Use the npm command to create a project definition file (package.json).
 ```sh
-npm init --yes
+npm init
 ```
+Answer the questions required. You could also take a look at the package.json inside the /examples/gettingStarted directory for help answering any of the questions.
 
-1. Install the SDK.
+3. Install the MATLAB Central SDK package.
 ```sh
 npm install matlabcentral
 ```
 
-1. Make sure the package.json has following line, if not include it
+4. Make sure the package.json that was created has following line, if not include it
 
 `"type": "module"`
 
 This is required as the SDK only supports ESM imports.
 
-4: In your project directory, create a file named gettingStarted.js with the following content:
+5. In your project directory, create a file named gettingStarted.js with the following content:
 ```javascript
 
 import MATLABCentral from 'matlabcentral';
@@ -83,7 +84,9 @@ executeSearch();
 
 ```
 
-5: Save the gettingStarted.js file and run the application with the following command
+Save the gettingStarted.js file.
+
+6. Run the script created with the following command
 
 ```sh
 node gettingStarted.js
