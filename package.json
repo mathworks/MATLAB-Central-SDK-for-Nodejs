@@ -2,6 +2,13 @@
   "name": "matlabcentral",
   "version": "1.0.3",
   "description": "Use this library to manage requests to MATLAB Central aka MathWorks Community API from your Node.js applications.",
+  "keywords": [
+    "MATLAB Central",
+    "MathWorks",
+    "MathWorks Community",
+    "REST API",
+    "MATLAB Central API"
+  ],
   "main": "src/index.js",
   "scripts": {
     "test": "mocha \"test/**/*.js\" --recursive --require @babel/register",
