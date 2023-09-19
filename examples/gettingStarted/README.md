@@ -12,10 +12,10 @@ In the example directory (`cd examples/gettingStarted`).
 
 Run the commands below to install matlabcentral package and other dependencies
 
-``sh
+```sh
     npm install matlabcentral
     npm install
-``
+```
 
 ## Running examples
 
