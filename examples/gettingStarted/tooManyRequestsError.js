@@ -1,6 +1,5 @@
 
 import MATLABCentral from 'matlabcentral';
-import { ApiError } from '../../src/model/ApiError.js';
 
 async function executeSearch() {
     let searchApi = new MATLABCentral.SearchApi();
@@ -22,7 +21,7 @@ async function executeSearch() {
             // e contains two fields:
             // e.reason: which is an instance of ApiError which is the formatted JSON with low-level details about the error
             // e.error: which is the unformatted error with access to the stack trace, request object, response body, headers and so on
-            if (e.reason instanceof ApiError) {
+            if (e.reason instanceof MATLABCentral.ApiError) {
                 if (e.reason.status == "429") {
                     // 429 errors happen when too many requests have been sent in a short period of time
                     //the code below implements a simple pause based on response headers
