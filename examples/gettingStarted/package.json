@@ -6,7 +6,6 @@
   "type": "module",
   "scripts": {},
   "dependencies": {
-    "httpdispatcher": "^2.2.0",
-    "matlabcentral": "1.0.0"
+    "httpdispatcher": "^2.2.0"
   }
 }
