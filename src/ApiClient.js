@@ -275,6 +275,16 @@ export class ApiClient {
     }
 
     /**
+     * Applies tracking header to the request.
+     * @param {Object} request The request object created by a <code>superagent()</code> call.
+    */
+    addTrackingHeaderToRequest(request) {
+        var data = {};
+        data["MLC-SDK-Id"] = "nodejs-sdk";                            
+        request.set(data);
+    }
+
+    /**
     * Applies authentication headers to the request.
     * @param {Object} request The request object created by a <code>superagent()</code> call.
     * @param {Array.<String>} authNames An array of authentication method names.
@@ -367,6 +377,9 @@ export class ApiClient {
         var url = this.buildUrl(path, pathParams);
         var request = superagent(httpMethod, url);
 
+        //apply tracking header 
+        this.addTrackingHeaderToRequest(request);
+
         // apply authentications
         this.applyAuthToRequest(request, authNames);
 
@@ -435,7 +448,6 @@ export class ApiClient {
                 request.withCredentials();
             }
         }
-
         return new Promise((resolve, reject) => {
             request.end((error, response) => {
                 if (error) {
