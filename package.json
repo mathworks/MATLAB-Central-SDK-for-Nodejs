@@ -1,6 +1,6 @@
 {
   "name": "matlabcentral",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Use this library to manage requests to MATLAB Central aka MathWorks Community API from your Node.js applications.",
   "keywords": [
     "MATLAB Central",
