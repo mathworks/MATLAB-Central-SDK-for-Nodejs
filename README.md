@@ -19,7 +19,7 @@ Use of the MATLAB Central Node.js SDK requires:
 
 * Node.js 14 or higher
 
-This SDK supports Node.js versions that are either current, or in long-term support status (LTS).  The SDK does not end-of-life (EOL) Node.js versions.  For more information on Node.js versioning, see <https://nodejs.org/en/about/releases/>.
+This SDK supports Node.js versions that are either current, or in long-term support status (LTS).  The SDK does not end-of-life (EOL) Node.js versions.  For more information on Node.js versioning, see <https://nodejs.org/en/about/previous-releases>.
 
 This SDK is for use with Node.js only. It does not support other usages, such as for web browsers or frontend applications.
 
