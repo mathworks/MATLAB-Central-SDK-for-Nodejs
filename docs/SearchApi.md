@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 Search MATLAB Central areas for content matching specified query.
 
-Returns MATLAB Central artifacts that match a specified query. Areas you can search include MATLAB Answers, File Exchange, Blogs, Cody, Community Highlights, and Community Contests. All parameters are optional. When no parameters are specified, all results from MATLAB Central are returned.
+Returns MATLAB Central artifacts that match a specified query. Areas you can search include MATLAB Answers, File Exchange, Blogs, Cody, Community Highlights, Community Contests, and Discussions. All parameters are optional. When no parameters are specified, all results from MATLAB Central are returned.
 
 The 'scope' parameter lets you restrict the request to specific MATLAB Central areas. The request accepts several other parameters to help narrow your search and create complex queries.
 
@@ -47,7 +47,7 @@ executeSearch();
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **query** | **String**| Enter keywords to search. Separate multiple keywords with space or comma. | [optional] 
- **scope** | **String**| A comma-separated list of MATLAB Central areas to search within.All values must be a member of this set: matlab-answers, file-exchange, cody, blogs, community-contests, community-highlights. | [optional] [default is all values in the set]
+ **scope** | **String**| A comma-separated list of MATLAB Central areas to search within.All values must be a member of this set: matlab-answers, file-exchange, cody, blogs, community-contests, community-highlights, discussions. | [optional] [default is all values in the set]
  **tags** | **String**| A comma-separated list of tags. MATLAB Central areas that do not support tags are excluded from the result set. | [optional] 
  **createdBefore** | **Date**| Content that was created before this date and time, specified in ISO 8601 format. | [optional] 
  **createdAfter** | **Date**| Content that was created after this date and time, specified in ISO 8601 format. | [optional] 
@@ -65,6 +65,7 @@ Each of the items returned can be one of the following artifact types:
 * [**File**](File.md)
 * [**Problem**](Problem.md)
 * [**Blog**](Blog.md)
+* [**Discussion**](Discussion.md)
 * Topic which can be a [**CommunityHighlight**](CommunityHighlight.md) or [**CommunityContest**](CommunityContest.md)
   
 The value for the scope parameter determines which artifacts are returned.
