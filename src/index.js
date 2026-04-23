@@ -6,6 +6,7 @@ import {Author} from './model/Author.js';
 import {Blog} from './model/Blog.js';
 import {CommunityContest} from './model/CommunityContest.js';
 import {CommunityHighlight} from './model/CommunityHighlight.js';
+import {Discussion} from './model/Discussion.js';
 import {File} from './model/File.js';
 import {Problem} from './model/Problem.js';
 import {Question} from './model/Question.js';
@@ -55,6 +56,12 @@ export default {
      * @property {module:model/CommunityHighlight}
      */
     CommunityHighlight,
+
+    /**
+     * The Discussion model constructor.
+     * @property {module:model/Discussion}
+     */
+    Discussion,
 
     /**
      * The File model constructor.

@@ -6,6 +6,7 @@ import { Question } from './Question.js';
 import { File } from './File.js';
 import { Problem } from './Problem.js';
 import { Blog } from './Blog.js';
+import { Discussion } from './Discussion.js';
 
 
 /**
@@ -50,6 +51,8 @@ export class SearchResults {
                   return items[index] = CommunityHighlight.constructFromObject(item);
                 } else if (item.scope == "community-contests") {
                   return items[index] = CommunityContest.constructFromObject(item);
+                } else if (item.scope == "discussions") {
+                  return items[index] = Discussion.constructFromObject(item);
                 }
                 end
             }
